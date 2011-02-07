@@ -64,7 +64,7 @@
     <module>../codingauditrules</module>
     <module>../core</module>
 <!--
-TODO enable when ready
+TODO enable when ready (has a build!)
     <module>../maven-plugin</module>
 -->
   </modules>
@@ -77,12 +77,12 @@ TODO enable when ready
 
   <ciManagement>
     <system>Bamboo</system>
-    <url>http://bamboo.ci.codehaus.org/browse/????</url>
+    <url>http://bamboo.ci.codehaus.org/browse/DBUNIT</url>
   </ciManagement>
 
   <issueManagement>
     <system>jira</system>
-    <url>http://jira.codehaus.org/browse/????</url>
+    <url>http://jira.codehaus.org/browse/DBUNIT</url>
   </issueManagement>
 
   <licenses>
