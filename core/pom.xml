@@ -1,17 +1,73 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
   <modelVersion>4.0.0</modelVersion>
-  <groupId>org.dbunit</groupId>
+
+  <parent>
+    <groupId>org.dbunit</groupId>
+    <artifactId>dbunit-parent</artifactId>
+    <version>3.0.0-SNAPSHOT</version>
+    <relativePath>../parent</relativePath>
+  </parent>
+
   <artifactId>dbunit-core</artifactId>
   <version>3.0.0-SNAPSHOT</version>
-  <name>dbUnit core library</name>
-  <description>dbUnit is a JUnit extension (also usable from Ant and Maven) targeted for database-driven projects that, among other things, puts your database into a known state between test runs. This is an excellent way to avoid the myriad of problems that can occur when one test case corrupts the database and causes subsequent tests to fail or exacerbate the damage.</description>
+
+  <packaging>jar</packaging>
+  <name>dbUnit Core Library</name>
+  <description>
+    dbUnit is a JUnit extension (also usable from Ant and Maven)
+    targeted for database-driven projects that, among other things,
+    puts your database into a known state between test runs.
+    This is an excellent way to avoid the myriad of problems that can occur
+    when one test case corrupts the database and causes subsequent tests
+    to fail or exacerbate the damage.
+  </description>
+
+  <scm>
+    <connection>scm:svn:http://svn.codehaus.org/dbunit/trunk/core</connection>
+    <developerConnection>scm:svn:https://svn.codehaus.org/dbunit/trunk/core</developerConnection>
+    <url>http://svn.codehaus.org/dbunit/trunk/core</url>
+  </scm>
+
   <dependencies>
-  	<dependency>
-  		<groupId>junit</groupId>
-  		<artifactId>junit</artifactId>
-  		<version>4.8.2</version>
-  		<type>jar</type>
-  		<scope>compile</scope>
-  	</dependency>
+    <!-- LOGGING -->
+    <dependency>
+      <groupId>org.slf4j</groupId>
+      <artifactId>slf4j-api</artifactId>
+    </dependency>
+
+    <!-- xUNIT-->
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+    </dependency>
+
+    <!-- ======== TEST DEPS ======== -->
+    <!-- so tests can log nicely -->
+    <dependency>
+      <groupId>org.slf4j</groupId>
+      <artifactId>jcl-over-slf4j</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>ch.qos.logback</groupId>
+      <artifactId>logback-classic</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>de.huxhorn.lilith</groupId>
+      <artifactId>de.huxhorn.lilith.logback.encoder.classic</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>de.huxhorn.lilith</groupId>
+      <artifactId>de.huxhorn.lilith.logback.appender.multiplex-classic</artifactId>
+    </dependency>
   </dependencies>
+
+  <distributionManagement>
+    <site>
+      <id>dbunit-site</id>
+      <name>dbUnit Site</name>
+      <url>dav:https://dav.codehaus.org/dbunit/core</url>
+    </site>
+  </distributionManagement>
 </project>
