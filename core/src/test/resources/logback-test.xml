@@ -1,0 +1,45 @@
+<!-- logback config file for testing-->
+<configuration scan="true">
+  <property name="moduleName" value="dbunit-core" />
+
+  <logger name="org.dbunit" level="TRACE" />
+
+  <!--
+  use the statusListener to help debug any problems with logging
+  it displays LogBack status messages to the console
+  <statusListener class="ch.qos.logback.core.status.OnConsoleStatusListener" />
+  -->
+
+  <contextName>${moduleName}</contextName>
+
+  <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+    <encoder class="ch.qos.logback.classic.encoder.PatternLayoutEncoder">
+      <pattern>%d{HH:mm:ss.SSS} [%thread] %-5level %logger{36}: %msg%n</pattern>
+    </encoder>
+  </appender>
+
+  <!-- NOTE: user must append slash in property -->
+  <property name="baseLogFileName" value="${logback.file.path:-target/}${moduleName}-TEST" />
+
+  <appender name="FILE-LOG" class="ch.qos.logback.core.FileAppender">
+    <file>${baseLogFileName}.log</file>
+    <append>false</append>
+    <encoder class="ch.qos.logback.classic.encoder.PatternLayoutEncoder">
+      <pattern>%date %contextName [%thread] %-5level %-55logger{55} %mdc: %marker: %msg%n</pattern>
+    </encoder>
+  </appender>
+  <appender name="FILE-LILITH" class="ch.qos.logback.core.FileAppender">
+    <file>${baseLogFileName}.lilith</file>
+    <append>false</append>
+    <encoder class="de.huxhorn.lilith.logback.encoder.ClassicLilithEncoder">
+      <IncludeCallerData>true</IncludeCallerData>
+    </encoder>
+  </appender>
+
+  <root level="WARN">
+    <appender-ref ref="STDOUT" />
+    <appender-ref ref="FILE-LOG" />
+    <appender-ref ref="FILE-LILITH" />
+  </root>
+
+</configuration>
