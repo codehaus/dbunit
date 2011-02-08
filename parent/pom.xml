@@ -8,7 +8,7 @@
   <version>3.0.0-SNAPSHOT</version>
 
   <packaging>pom</packaging>
-  <name>dbUnit Parent POM</name>
+  <name>dbUnit</name>
   <description>This module is the parent POM.</description>
   <url>http://dbunit.codehaus.org</url>
 
@@ -265,7 +265,9 @@ TODO enable when all modules in SCM
                     </tag>
                   </tags>
                   <links>
+                    <link>http://download.oracle.com/javase/6/docs/api/</link>
                     <link>http://www.slf4j.org/apidocs/</link>
+                    <link>http://junit.sourceforge.net/javadoc/</link>
                   </links>
                   <doclet>org.umlgraph.doclet.UmlGraphDoc</doclet>
                   <docletArtifact>

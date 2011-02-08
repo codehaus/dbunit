@@ -1,0 +1,8 @@
+About dbUnit
+
+ dbUnit is a JUnit extension (also usable from Ant and Maven)
+ targeted for database-driven projects that, among other things,
+ puts your database into a known state between test runs.
+ This is an excellent way to avoid the myriad of problems that can occur
+ when one test case corrupts the database and causes subsequent tests
+ to fail or exacerbate the damage.
