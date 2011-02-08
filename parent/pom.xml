@@ -103,6 +103,15 @@ TODO enable when ready (has a build!)
       </roles>
       <timezone>-6</timezone>
     </developer>
+    <developer>
+      <id>tychobrailleur</id>
+      <name>Sébastien Le Callonnec</name>
+      <email>sebastien@weblogism.com</email>
+      <roles>
+        <role>Developer</role>
+      </roles>
+      <timezone>0</timezone>
+    </developer>
 <!-- TODO everyone add yourself -->
   </developers>
 
@@ -158,7 +167,7 @@ TODO enable when ready (has a build!)
         <dependencies>
           <dependency>
             <groupId>${project.groupId}</groupId>
-            <artifactId>codingauditrules</artifactId>
+            <artifactId>dbunit-codingauditrules</artifactId>
             <version>${project.version}</version>
           </dependency>
         </dependencies>
