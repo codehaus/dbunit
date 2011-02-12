@@ -1,0 +1,53 @@
+{"dataset": { 
+	"auth.user": [
+			{
+    			"id": "${sequence:user}", 
+    			"username": "slecallonnec",
+    			"password": "password",
+    			"created": "${now:timestamp}",
+				"lastLogin": "25-11-1975", 
+				"image": null
+    		},
+    		{
+    			"id": "${sequence:user}",
+    			"username": "rlogiacco",
+    			"created": "${now:time}",
+				"lastLogin": null, 
+				"image": "${file:'resources/avatar.png'}"
+    		},
+    		{
+    			"id": "${sequence:user}",
+    			"username": "jjensen",
+    			"password": "password",
+    			"created": "${now:date}",
+				"lastLogin": "${now:'yyyy-mm-dd HH:MM:SS:MMM'}", 
+				"image": "${file:env.USER_HOME + 'resources/avatar.png'}"
+    		}
+        ],
+    "auth.group": [
+    		{
+    			"id": "${sequence:group}",
+    			"name": "admins",
+    			"description": "System Administrators"
+    		},
+    		{
+    			"id": "${sequence:group}",
+    			"name": "users",
+    			"description": "System Users"
+    		}
+    	],
+   	"auth.membership": [
+    		{
+    			"group": "${sequence:group[name='admins']}",
+    			"user": "${sequence:user[username='slecallonnec']}",
+    		},
+    		{
+    			"group": "${sequence:group[name='admins']}",
+    			"user": "${sequence:user[username='jjensen']}",
+    		},
+    		{
+    			"group": "${sequence:group[name='users']}",
+    			"user": "${sequence:user[username='rlogiacco']}",
+    		}
+    	]
+}}

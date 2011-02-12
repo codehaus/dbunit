@@ -1,0 +1,10 @@
+<dataset>
+	<!-- direct -->
+	<a id="1" b="1"/>
+	<b id="1" a="1"/>
+	
+	<!-- indirect -->
+	<c id="1" d="1"/>
+	<d id="1" e="1"/>
+	<e id="1" c="1"/>
+</dataset>

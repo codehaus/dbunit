@@ -1,0 +1,30 @@
+<dataset>
+	<auth.user id="${sequence:user}" 
+		username="slecallonnec" 
+		created="${now:timestamp}"
+		lastLogin="1975-11-25" 
+		image="${null}" />
+	<auth.user id="${sequence:user}" 
+		username="rlogiacco" 
+		created="${now:time}"
+		lastLogin="${null}" 
+		image="${file:'resources/avatar.png'}" />
+	<auth.user id="${sequence:user}" 
+		username="jjensen" 
+		created="${now:date}"
+		lastLogin="${now:'yyyy-mm-dd HH:MM:SS:MMM'}" 
+		image="${file:env.USER_HOME + 'resources/avatar.png'}" />
+
+	<auth.group id="${sequence:group}" name="admins" />
+	<auth.group id="${sequence:group}" name="users" />
+
+	<auth.membership 
+		group="${sequence:group[name='admins']}" 
+		users="${sequence:user[username='slecallonnec']}" />
+	<auth.membership 
+		group="${sequence:group[name='admins']}" 
+		users="${sequence:user[username='rlogiacco']}" />
+	<auth.membership 
+		group="${sequence:group[name='admins']}" 
+		users="${sequence:user[username='jjensen']}" />
+</dataset>

@@ -1,0 +1,36 @@
+<dataset>
+	<index table="auth.user" attribute="id" value="${sequence:user}" searchBy="username"/>
+	<index table="auth.group" attribute="id" value="${sequence:group}" searchBy="name"/>
+	<!-- custom function definition
+	<function name="myFunc" handler="org.dbunit.functions.MyFunction"/>
+	 -->
+	 
+	<auth.user 
+		username="slecallonnec" 
+		created="${now:timestamp}"
+		lastLogin="1975-11-25" 
+		image="${null}" />
+	<auth.user  
+		username="rlogiacco" 
+		created="${now:time}"
+		lastLogin="${null}" 
+		image="${file:'resources/avatar.png'}" />
+	<auth.user  
+		username="jjensen" 
+		created="${now:date}"
+		lastLogin="${now:'yyyy-mm-dd HH:MM:SS:MMM'}" 
+		image="${file:env.USER_HOME + 'resources/avatar.png'}" />
+
+	<auth.group name="admins" />
+	<auth.group name="users" />
+
+	<auth.membership 
+		group="${sequence:group['admins']}" 
+		users="${sequence:user['slecallonnec']}" />
+	<auth.membership 
+		group="${sequence:group['users']}" 
+		users="${sequence:user['rlogiacco']}" />
+	<auth.membership 
+		group="${sequence:group['admins']}" 
+		users="${sequence:user['jjensen']}" />
+</dataset>
