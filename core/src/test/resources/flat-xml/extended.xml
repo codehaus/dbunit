@@ -1,22 +1,25 @@
-<dataset>
-	<index table="auth.user" attribute="id" value="${sequence:user}" searchBy="username"/>
-	<index table="auth.group" attribute="id" value="${sequence:group}" searchBy="name"/>
-	<!-- custom function definition
-	<function name="myFunc" handler="org.dbunit.functions.MyFunction"/>
-	 -->
-	 
-	<auth.user 
-		username="slecallonnec" 
+<?xml version="1.0" encoding="UTF-8"?>
+<dataset xmlns="http://www.dbunit.org/flat-xml/1.0" 
+	xmlns:ext="http://www.dbunit.org/xml-extended/1.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.dbunit.org/flat-xml/1.0 http://www.dbunit.org/schemas/flat-xml-1.0.xsd http://www.dbunit.org/xml-extended/1.0 http://www.dbunit.org/schemas/xml-extended-1.0.xsd">
+	
+	<ext:index table="auth.user" attribute="id" value="${sequence(user)}" searchBy="username" />
+	<ext:index table="auth.group" attribute="id" value="${sequence(group)}" searchBy="name" />
+	<!-- custom function definition 
+	<ext:function name="myFunc" handler="org.dbunit.functions.MyFunction"/> -->
+	<!-- variable definition
+	<ext:variable id="anything">any value</ext:variable> -->
+	
+	<auth.user username="slecallonnec" 
 		created="${now:timestamp}"
 		lastLogin="1975-11-25" 
 		image="${null}" />
-	<auth.user  
-		username="rlogiacco" 
+	<auth.user username="rlogiacco" 
 		created="${now:time}"
 		lastLogin="${null}" 
 		image="${file:'resources/avatar.png'}" />
-	<auth.user  
-		username="jjensen" 
+	<auth.user username="jjensen" 
 		created="${now:date}"
 		lastLogin="${now:'yyyy-mm-dd HH:MM:SS:MMM'}" 
 		image="${file:env.USER_HOME + 'resources/avatar.png'}" />
@@ -24,13 +27,10 @@
 	<auth.group name="admins" />
 	<auth.group name="users" />
 
-	<auth.membership 
-		group="${sequence:group['admins']}" 
-		users="${sequence:user['slecallonnec']}" />
-	<auth.membership 
-		group="${sequence:group['users']}" 
-		users="${sequence:user['rlogiacco']}" />
-	<auth.membership 
-		group="${sequence:group['admins']}" 
-		users="${sequence:user['jjensen']}" />
+	<auth.membership group="${index(group,'admins')}"
+		users="${index(user,'slecallonnec')}" />
+	<auth.membership group="${index(group,'users')}"
+		users="${index(user,'rlogiacco')}" />
+	<auth.membership group="${index(group,'admins')}"
+		users="${index(user,'jjensen')}" />
 </dataset>

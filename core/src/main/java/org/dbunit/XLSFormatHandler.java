@@ -19,21 +19,21 @@
 package org.dbunit;
 
 /**
- * @author  rlogiacco
+ * @author rlogiacco
  */
-public interface DatabaseOperation {
+public class XLSFormatHandler implements DataSetFormatHandler {
+	/**
+	 * @author rlogiacco
+	 * 
+	 */
+	private class XLSStreamingDataSet extends StreamingDataSet {
 
-	public final static DatabaseOperation NONE = null;
-	public final static DatabaseOperation CLEAN_INSERT = null;
-	public final static DatabaseOperation UPDATE = null;
-	public final static DatabaseOperation INSERT = null;
-	public final static DatabaseOperation DELETE = null;
-	public final static DatabaseOperation DELETE_ALL = null;
-	public final static DatabaseOperation TRUNCATE = null;
-	public final static DatabaseOperation REFRESH = null;
+	}
 
-	public void addListener(OperationListener listener);
-	
-	public void removeListener(OperationListener listener);
-
+	/**
+	 * @see org.dbunit.DataSetFormatHandler#getStreamingDataSet()
+	 */
+	public StreamingDataSet getStreamingDataSet() {
+		return new XLSStreamingDataSet();
+	}
 }

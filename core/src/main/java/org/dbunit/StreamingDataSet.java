@@ -18,22 +18,34 @@
  */
 package org.dbunit;
 
-/**
- * @author  rlogiacco
+/** 
+ * @author rlogiacco
  */
-public interface DatabaseOperation {
+public class StreamingDataSet extends DataSet {
 
-	public final static DatabaseOperation NONE = null;
-	public final static DatabaseOperation CLEAN_INSERT = null;
-	public final static DatabaseOperation UPDATE = null;
-	public final static DatabaseOperation INSERT = null;
-	public final static DatabaseOperation DELETE = null;
-	public final static DatabaseOperation DELETE_ALL = null;
-	public final static DatabaseOperation TRUNCATE = null;
-	public final static DatabaseOperation REFRESH = null;
+	/**
+	 * @uml.property  name="handler"
+	 * @uml.associationEnd  inverse="streamingDataSet:org.dbunit.DataSetFormatHandler"
+	 */
+	private DataSetFormatHandler handler;
 
-	public void addListener(OperationListener listener);
-	
-	public void removeListener(OperationListener listener);
+	/**
+	 * Getter of the property <tt>handler</tt>
+	 * @return  Returns the handler.
+	 * @uml.property  name="handler"
+	 */
+	public DataSetFormatHandler getHandler() {
+		return handler;
+	}
+
+	/**
+	 * Setter of the property <tt>handler</tt>
+	 * @param handler  The handler to set.
+	 * @uml.property  name="handler"
+	 */
+	public void setHandler(DataSetFormatHandler handler) {
+		this.handler = handler;
+	}
+
 
 }

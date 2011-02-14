@@ -18,22 +18,36 @@
  */
 package org.dbunit;
 
-/**
- * @author  rlogiacco
+import java.util.ArrayList;
+import java.util.List;
+
+/** 
+ * @author rlogiacco
  */
-public interface DatabaseOperation {
+public class CompositeDataSet extends DataSet {
 
-	public final static DatabaseOperation NONE = null;
-	public final static DatabaseOperation CLEAN_INSERT = null;
-	public final static DatabaseOperation UPDATE = null;
-	public final static DatabaseOperation INSERT = null;
-	public final static DatabaseOperation DELETE = null;
-	public final static DatabaseOperation DELETE_ALL = null;
-	public final static DatabaseOperation TRUNCATE = null;
-	public final static DatabaseOperation REFRESH = null;
+	/**
+	 * @uml.property  name="dataSets"
+	 * @uml.associationEnd  multiplicity="(0 -1)" ordering="true" inverse="compositeDataSet:org.dbunit.DataSet"
+	 */
+	private List<DataSet> dataSets = new ArrayList<DataSet>();
 
-	public void addListener(OperationListener listener);
-	
-	public void removeListener(OperationListener listener);
+	/**
+	 * Getter of the property <tt>dataSets</tt>
+	 * @return  Returns the dataSets.
+	 * @uml.property  name="dataSets"
+	 */
+	public List<DataSet> getDataSets() {
+		return dataSets;
+	}
+
+	/**
+	 * Setter of the property <tt>dataSets</tt>
+	 * @param dataSets  The dataSets to set.
+	 * @uml.property  name="dataSets"
+	 */
+	public void setDataSets(List<DataSet> dataSets) {
+		this.dataSets = dataSets;
+	}
 
 }

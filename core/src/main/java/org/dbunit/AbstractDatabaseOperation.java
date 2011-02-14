@@ -18,22 +18,27 @@
  */
 package org.dbunit;
 
-/**
- * @author  rlogiacco
+import java.util.Collection;
+
+/** 
+ * @author rlogiacco
  */
-public interface DatabaseOperation {
+public class AbstractDatabaseOperation implements DatabaseOperation {
 
-	public final static DatabaseOperation NONE = null;
-	public final static DatabaseOperation CLEAN_INSERT = null;
-	public final static DatabaseOperation UPDATE = null;
-	public final static DatabaseOperation INSERT = null;
-	public final static DatabaseOperation DELETE = null;
-	public final static DatabaseOperation DELETE_ALL = null;
-	public final static DatabaseOperation TRUNCATE = null;
-	public final static DatabaseOperation REFRESH = null;
+	public void addListener(OperationListener listener) {
+		// TODO Auto-generated method stub
+		
+	}
 
-	public void addListener(OperationListener listener);
-	
-	public void removeListener(OperationListener listener);
+	public void removeListener(OperationListener listener) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	/**
+	 * @uml.property  name="listeners"
+	 * @uml.associationEnd  multiplicity="(0 -1)" inverse="abstractDatabaseOperation:org.dbunit.OperationListener"
+	 */
+	private Collection<OperationListener> listeners = new java.util.ArrayList();
 
 }

@@ -18,22 +18,16 @@
  */
 package org.dbunit;
 
-/**
- * @author  rlogiacco
+/** 
+ * @author rlogiacco
  */
-public interface DatabaseOperation {
+public interface DataSetFormatHandler {
 
-	public final static DatabaseOperation NONE = null;
-	public final static DatabaseOperation CLEAN_INSERT = null;
-	public final static DatabaseOperation UPDATE = null;
-	public final static DatabaseOperation INSERT = null;
-	public final static DatabaseOperation DELETE = null;
-	public final static DatabaseOperation DELETE_ALL = null;
-	public final static DatabaseOperation TRUNCATE = null;
-	public final static DatabaseOperation REFRESH = null;
-
-	public void addListener(OperationListener listener);
+	/**
+	 * @return  Returns the streamingDataSet.
+	 * @uml.property  name="streamingDataSet"
+	 * @uml.associationEnd  readOnly="true" inverse="handler:org.dbunit.StreamingDataSet"
+	 */
+	public StreamingDataSet getStreamingDataSet();
 	
-	public void removeListener(OperationListener listener);
-
 }

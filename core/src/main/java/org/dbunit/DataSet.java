@@ -18,21 +18,89 @@
  */
 package org.dbunit;
 
+import java.sql.Connection;
+import java.util.ArrayList;
 import java.util.List;
 
 /**
  * @author rlogiacco
- *
+ * 
  */
 public class DataSet {
 
 	/**
-	 * @author rlogiacco
-	 *
+	 * @uml.property name="schemas"
+	 * @uml.associationEnd multiplicity="(0 -1)" ordering="true"
+	 *                     inverse="dataSet:org.dbunit.Schema"
 	 */
-	public enum Format {
-		FLAT_XML, XML, XSL, CSV;
+	private List<Schema> schemas = new ArrayList<Schema>();
+
+	/**
+	 * @uml.property name="rows"
+	 * @uml.associationEnd multiplicity="(0 -1)" ordering="true"
+	 *                     inverse="dataSet:org.dbunit.Row"
+	 */
+	private List<Row> rows = new ArrayList<Row>();
+
+	/**
+	 * Getter of the property <tt>schemas</tt>
+	 * 
+	 * @return Returns the schemas.
+	 * @uml.property name="schemas"
+	 */
+	public List<Schema> getSchemas() {
+		return schemas;
 	}
 
-	List<Table> tables;
+	/**
+	 * Setter of the property <tt>schemas</tt>
+	 * 
+	 * @param schemas
+	 *            The schemas to set.
+	 * @uml.property name="schemas"
+	 */
+	public void setSchemas(List<Schema> schemas) {
+		this.schemas = schemas;
+	}
+
+	/**
+	 * Getter of the property <tt>rows</tt>
+	 * 
+	 * @return Returns the rows.
+	 * @uml.property name="rows"
+	 */
+	public List<Row> getRows() {
+		return rows;
+	}
+
+	/**
+	 * Setter of the property <tt>rows</tt>
+	 * 
+	 * @param rows
+	 *            The rows to set.
+	 * @uml.property name="rows"
+	 */
+	public void setRows(List<Row> rows) {
+		this.rows = rows;
+	}
+
+	public static DataSet merge(DataSet... dataSets) {
+		return null;
+	}
+
+	public static DataSet subtract(DataSet... dataSets) {
+		return null;
+	}
+
+	public static DataSet intersect(DataSet... dataSets) {
+		return null;
+	}
+	
+	public static DataSet query(Connection connection, String query) {
+		return null;
+	}
+	
+	public static DataSet queryTables(Connection connection, String... tables) {
+		return null;
+	}
 }

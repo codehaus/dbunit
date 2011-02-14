@@ -22,17 +22,17 @@ import java.util.Arrays;
 import java.util.Collection;
 
 /**
- * @author rlogiacco
- * 
+ * @author  rlogiacco
  */
 public class Row {
 	/**
-	 * 
+	 * @uml.property  name="values"
 	 */
 	private Object[] values;
 
 	/**
 	 * @return
+	 * @uml.property  name="values"
 	 */
 	public Iterable<Object> getValues() {
 		return Arrays.asList(values);
@@ -42,7 +42,35 @@ public class Row {
 		this.values = values.toArray();
 	}
 
+	/**
+	 * @param values
+	 * @uml.property  name="values"
+	 */
 	public void setValues(Object[] values) {
 		this.values = values;
+	}
+
+	/**
+	 * @uml.property  name="table"
+	 * @uml.associationEnd  inverse="rows:org.dbunit.Table"
+	 */
+	private Table table;
+
+	/**
+	 * Getter of the property <tt>table</tt>
+	 * @return  Returns the table.
+	 * @uml.property  name="table"
+	 */
+	public Table getTable() {
+		return table;
+	}
+
+	/**
+	 * Setter of the property <tt>table</tt>
+	 * @param table  The table to set.
+	 * @uml.property  name="table"
+	 */
+	public void setTable(Table table) {
+		this.table = table;
 	}
 }

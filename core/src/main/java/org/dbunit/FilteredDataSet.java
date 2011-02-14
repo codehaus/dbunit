@@ -18,22 +18,35 @@
  */
 package org.dbunit;
 
-/**
- * @author  rlogiacco
+import java.util.List;
+
+/** 
+ * @author rlogiacco
  */
-public interface DatabaseOperation {
+public class FilteredDataSet extends DataSet {
 
-	public final static DatabaseOperation NONE = null;
-	public final static DatabaseOperation CLEAN_INSERT = null;
-	public final static DatabaseOperation UPDATE = null;
-	public final static DatabaseOperation INSERT = null;
-	public final static DatabaseOperation DELETE = null;
-	public final static DatabaseOperation DELETE_ALL = null;
-	public final static DatabaseOperation TRUNCATE = null;
-	public final static DatabaseOperation REFRESH = null;
+	/**
+	 * @uml.property  name="filters"
+	 * @uml.associationEnd  multiplicity="(0 -1)" ordering="true" inverse="filteredDataSet:org.dbunit.Filter"
+	 */
+	private List<Filter> filters = new java.util.ArrayList();
 
-	public void addListener(OperationListener listener);
-	
-	public void removeListener(OperationListener listener);
+	/**
+	 * Getter of the property <tt>filters</tt>
+	 * @return  Returns the filters.
+	 * @uml.property  name="filters"
+	 */
+	public List<Filter> getFilters() {
+		return filters;
+	}
+
+	/**
+	 * Setter of the property <tt>filters</tt>
+	 * @param filters  The filters to set.
+	 * @uml.property  name="filters"
+	 */
+	public void setFilters(List<Filter> filters) {
+		this.filters = filters;
+	}
 
 }

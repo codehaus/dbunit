@@ -23,14 +23,31 @@ import java.util.ArrayList;
 import java.util.Arrays;
 
 /**
- * @author rlogiacco
- * 
+ * @author  rlogiacco
  */
 public class DataSetBuilder extends DataSet {
 
+
+
+	/**
+	 * @uml.property  name="dataSet"
+	 * @uml.associationEnd  inverse="dataSetBuilder:org.dbunit.DataSet"
+	 */
+	private DataSet dataSet;
+	
+	/**
+	 * @uml.property  name="current"
+	 * @uml.associationEnd  
+	 */
 	private Table current;
 
 	public DataSetBuilder table(String name) {
+		this.current = new Table();
+		current.name = name;
+		return this;
+	}
+	
+	public DataSetBuilder table(String name, String schema) {
 		this.current = new Table();
 		current.name = name;
 		return this;
@@ -74,4 +91,7 @@ public class DataSetBuilder extends DataSet {
 		return new Column();
 	}
 
+	public DataSet build() {
+		return dataSet;
+	}
 }

@@ -18,12 +18,15 @@
  */
 package org.dbunit.annotation;
 
+import static org.dbunit.Assert.assertEquals;
+
+import java.sql.Connection;
 import java.sql.Driver;
 
-import static org.dbunit.Assert.*;
-import org.dbunit.Connection;
 import org.dbunit.DataSet;
-import org.dbunit.DataSet.Format;
+import org.dbunit.DataSetFactory;
+import org.dbunit.Dialect;
+import org.dbunit.Format;
 import org.dbunit.annotation.TestConnection.DatabaseOperation;
 import org.dbunit.annotation.TestDataSet.Filter;
 import org.dbunit.annotation.TestDataSet.Replace;
@@ -42,8 +45,10 @@ public class UsageExample {
 
 	@Test
 	@TestDataSet("http://www.dbunit.org/users.xml")
-	public void singleURLDataSet(DataSet expected) throws Exception {
-		DataSet actual = connection.createDataSet("PIPPO");
+	public void singleURLDataSet(
+			@TestDataSet("http://www.dbunit.org/users.xml") DataSet expected)
+			throws Exception {
+		DataSet actual = DataSet.query(connection, "PIPPO");
 		assertEquals(expected, actual);
 	}
 
@@ -95,8 +100,8 @@ public class UsageExample {
 		// do something
 
 		// read actual data
-		DataSet actual = connection.createDataSet("");
-		
+		DataSet actual = null; // connection.createDataSet("");
+
 		// perform assertions
 		assertEquals(expected, actual);
 	}

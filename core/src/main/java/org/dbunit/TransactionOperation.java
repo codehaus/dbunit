@@ -18,22 +18,35 @@
  */
 package org.dbunit;
 
-/**
- * @author  rlogiacco
+import java.util.List;
+
+/** 
+ * @author rlogiacco
  */
-public interface DatabaseOperation {
+public class TransactionOperation extends AbstractDatabaseOperation implements DatabaseOperation {
 
-	public final static DatabaseOperation NONE = null;
-	public final static DatabaseOperation CLEAN_INSERT = null;
-	public final static DatabaseOperation UPDATE = null;
-	public final static DatabaseOperation INSERT = null;
-	public final static DatabaseOperation DELETE = null;
-	public final static DatabaseOperation DELETE_ALL = null;
-	public final static DatabaseOperation TRUNCATE = null;
-	public final static DatabaseOperation REFRESH = null;
+	/** 
+	 * @uml.property name="operation"
+	 * @uml.associationEnd inverse="compositeDatabaseOperation:org.dbunit.DatabaseOperation"
+	 */
+	private DatabaseOperation operations;
 
-	public void addListener(OperationListener listener);
-	
-	public void removeListener(OperationListener listener);
+	/** 
+	 * Getter of the property <tt>operation</tt>
+	 * @return  Returns the operation.
+	 * @uml.property  name="operation"
+	 */
+	public DatabaseOperation getOperation() {
+		return operations;
+	}
+
+	/** 
+	 * Setter of the property <tt>operation</tt>
+	 * @param operation  The operation to set.
+	 * @uml.property  name="operation"
+	 */
+	public void setOperation(DatabaseOperation operation) {
+		operations = operation;
+	}
 
 }

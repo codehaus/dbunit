@@ -18,16 +18,20 @@
  */
 package org.dbunit;
 
-/**
- * @author rlogiacco
- *
- */
-public interface Connection {
+import java.util.Map;
 
-	/**
-	 * @param string
-	 * @return
-	 */
-	DataSet createDataSet(String string);
+/** 
+ * @author rlogiacco
+ */
+public interface Dialect {
+	public Map<Class<?>, TypeHandler> getTypeMappings();
+	
+	public void setTypeMapping(Class<?> type, TypeHandler handler);
+	
+	public String getCaseAwareName();
+	
+	public boolean isConstraintDisablingSupported();
+	
+	public boolean disableConstraints(DataSet dataSet);
 
 }

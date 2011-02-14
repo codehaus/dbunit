@@ -24,7 +24,7 @@ import java.lang.annotation.RetentionPolicy;
 import java.lang.annotation.Target;
 import java.sql.Driver;
 
-import org.dbunit.DataSet.Format;
+import org.dbunit.Format;
 
 /**
  * @author rlogiacco

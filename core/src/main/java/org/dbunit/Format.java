@@ -20,36 +20,45 @@ package org.dbunit;
 
 /**
  * @author rlogiacco
- * 
  */
-public class Assert extends org.junit.Assert {
-	/**
-	 * @param expected
-	 * @param actual
-	 */
-	public static void assertEquals(DataSet expected, DataSet actual) {
-		// TO DO
+public enum Format {
+	FLAT_XML("flat-xml", "xml", FlatXMLFormatHandler.class), 
+	XML("xml", "xml",XMLFormatHandler.class), 
+	XLS("excel", "xls", XLSFormatHandler.class), 
+	JSON("json", "json", JSONFormatHandler.class), 
+	CSV("csv", "csv", CSVFormatHandler.class), 
+	CSV_GROUP("csv-group", "csv", CSVFormatHandler.class);
+
+	private String name;
+	private String extension;
+	private Class<? extends DataSetFormatHandler> handler;
+
+	private Format(String name, String extension, 
+			Class<? extends DataSetFormatHandler> handler) {
+		this.name = name;
+		this.extension = extension;
+		this.handler = handler;
 	}
-	
+
 	/**
-	 * @param expected
-	 * @param actual
+	 * @return the name
 	 */
-	public static void assertNotEquals(DataSet expected, DataSet actual) {
-		// TO DO
+	public String getName() {
+		return name;
 	}
-	
+
 	/**
-	 * @param actual
+	 * @return the extension
 	 */
-	public static void assertIsEmpty(DataSet actual) {
-		// TO DO
+	public String getExtension() {
+		return extension;
 	}
-	
+
 	/**
-	 * @param actual
+	 * @return the handler
 	 */
-	public static void assertIsNotEmpty(DataSet actual) {
-		// TO DO
+	public Class<? extends DataSetFormatHandler> getHandler() {
+		return handler;
 	}
+
 }

@@ -1,0 +1,521 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<editmodel:ClassDiagramEditModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:editmodel="editmodel.xmi" xmlns:options="options.xmi" name="overview" size="1195,867" id="org.dbunit" metadata="uml2-1.0" initialized="true" zoom="0.75" scrolledY="-62" tag="1000" key="32303037303533312D3130303020636F72652F4C6F47696163636F52">
+  <children xsi:type="editmodel:ClassEditModel" targetConnections="//@children.15/@sourceConnections.0" name="Assert" location="912,74" size="137,121" id="org.dbunit/Assert" runTimeClassModel="assertEquals(Lorg.dbunit.DataSet;Lorg.dbunit.DataSet;),assertIsEmpty(Lorg.dbunit.DataSet;),assertIsNotEmpty(Lorg.dbunit.DataSet;),assertNotEquals(Lorg.dbunit.DataSet;Lorg.dbunit.DataSet;)">
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="114,72">
+      <children xsi:type="editmodel:MethodEditModel" name="assertEquals" id="org.dbunit/Assert#assertEquals(Lorg.dbunit.DataSet;Lorg.dbunit.DataSet;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="assertIsEmpty" id="org.dbunit/Assert#assertIsEmpty(Lorg.dbunit.DataSet;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="assertIsNotEmpty" id="org.dbunit/Assert#assertIsNotEmpty(Lorg.dbunit.DataSet;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="assertNotEquals" id="org.dbunit/Assert#assertNotEquals(Lorg.dbunit.DataSet;Lorg.dbunit.DataSet;)"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" targetConnections="//@children.6/@sourceConnections.0" name="Column" location="720,44" size="102,75" id="org.dbunit/Column" runTimeClassModel="name,type">
+    <children xsi:type="editmodel:CompartmentEditModel" size="79,36">
+      <children xsi:type="editmodel:AttributeEditModel" name="name" id="org.dbunit/Column#name"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="type" id="org.dbunit/Column#type"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:InterfaceEditModel" targetConnections="//@children.16/@sourceConnections.0 //@children.16/@sourceConnections.1 //@children.17/@sourceConnections.0 //@children.18/@sourceConnections.0 //@children.19/@sourceConnections.0 //@children.20/@sourceConnections.0 //@children.21/@sourceConnections.0 //@children.22/@sourceConnections.0 //@children.23/@sourceConnections.0 //@children.24/@sourceConnections.0 //@children.33/@sourceConnections.2 //@children.33/@sourceConnections.3" name="DatabaseOperation" location="690,520" size="164,99" id="org.dbunit/DatabaseOperation" runTimeClassModel="cLEAN_INSERT,rEFRESH,dELETE,removeListener(Lorg.dbunit.OperationListener;),addListener(Lorg.dbunit.OperationListener;),nONE,uPDATE,iNSERT,tRUNCATE,dELETE_ALL">
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="105,36">
+      <children xsi:type="editmodel:MethodEditModel" name="addListener" id="org.dbunit/DatabaseOperation#addListener(Lorg.dbunit.OperationListener;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="removeListener" id="org.dbunit/DatabaseOperation#removeListener(Lorg.dbunit.OperationListener;)"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:EnumerationEditModel" targetConnections="//@children.14/@sourceConnections.1" name="Format" location="224,-15" size="94,43" id="org.dbunit/Format" runTimeClassModel="CSV_GROUP%,XSL%,XML%,FLAT_XML%,Format%,CSV%,JSON%,extension%">
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:InterfaceEditModel" targetConnections="//@children.24/@sourceConnections.1" name="OperationListener" location="989,450" size="156,43" id="org.dbunit/OperationListener" runTimeClassModel="">
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" targetConnections="//@children.6/@sourceConnections.1 //@children.8/@sourceConnections.1" name="Row" location="490,167" size="111,57" id="org.dbunit/Row" runTimeClassModel="values,setValues(Ljava.util.Collection;)">
+    <children xsi:type="editmodel:CompartmentEditModel" size="88,18">
+      <children xsi:type="editmodel:AttributeEditModel" name="values" id="org.dbunit/Row#values"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" targetConnections="//@children.9/@sourceConnections.0" name="Table" location="716,168" size="102,57" id="org.dbunit/Table" runTimeClassModel="name,org.dbunit.Table.Metadata">
+    <children xsi:type="editmodel:CompartmentEditModel" size="79,18">
+      <children xsi:type="editmodel:AttributeEditModel" name="name" id="org.dbunit/Table#name"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <sourceConnections xsi:type="editmodel:AssociationEditModel" autoLocated="true" id="org.dbunit/Table@table+org.dbunit/Column@columns" source="//@children.6" target="//@children.1" targetEnd="//@children.6/@sourceConnections.0/@children.1" label="//@children.6/@sourceConnections.0/@children.2" sourceEnd="//@children.6/@sourceConnections.0/@children.0" connectionRouterKind="Manhattan">
+      <children xsi:type="editmodel:AssociationEndEditModel" name="table" location="52,0" id="org.dbunit/Table@table+org.dbunit/Column@columns|org.dbunit/Table#table" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" name="columns" location="48,75" id="org.dbunit/Table@table+org.dbunit/Column@columns|org.dbunit/Column#columns" multiplicityLabel="//@children.6/@sourceConnections.0/@children.1/@children.1" roleLabel="//@children.6/@sourceConnections.0/@children.1/@children.0" navigable="true" orderingKind="1">
+        <children xsi:type="editmodel:LabelEditModel" name=" # columns" location="775,125" size="52,14" anchorKind="LastPart"/>
+        <children xsi:type="editmodel:LabelEditModel" name="*" location="757,125" size="4,14" anchorKind="LastPart"/>
+      </children>
+      <children xsi:type="editmodel:WireLabelEditModel" size="0,14" anchorKind="MiddlePart"/>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:AssociationEditModel" autoLocated="true" id="org.dbunit/Table@table+org.dbunit/Row@rows" source="//@children.6" target="//@children.5" targetEnd="//@children.6/@sourceConnections.1/@children.1" label="//@children.6/@sourceConnections.1/@children.2" sourceEnd="//@children.6/@sourceConnections.1/@children.0" connectionRouterKind="Manhattan">
+      <children xsi:type="editmodel:AssociationEndEditModel" name="table" location="0,27" id="org.dbunit/Table@table+org.dbunit/Row@rows|org.dbunit/Table#table" attachSource="true" multiplicityLabel="//@children.6/@sourceConnections.1/@children.0/@children.1" roleLabel="//@children.6/@sourceConnections.1/@children.0/@children.0" navigable="true">
+        <children xsi:type="editmodel:LabelEditModel" name=" - table" location="676,173" size="33,14" anchorKind="FirstPart"/>
+        <children xsi:type="editmodel:LabelEditModel" name="0..1" location="691,201" size="18,14" anchorKind="FirstPart"/>
+      </children>
+      <children xsi:type="editmodel:AssociationEndEditModel" name="rows" location="111,28" id="org.dbunit/Table@table+org.dbunit/Row@rows|org.dbunit/Row#rows" multiplicityLabel="//@children.6/@sourceConnections.1/@children.1/@children.1" roleLabel="//@children.6/@sourceConnections.1/@children.1/@children.0" navigable="true" orderingKind="1">
+        <children xsi:type="editmodel:LabelEditModel" name=" # rows" location="607,173" size="38,14" anchorKind="LastPart"/>
+        <children xsi:type="editmodel:LabelEditModel" name="*" location="607,201" size="4,14" anchorKind="LastPart"/>
+      </children>
+      <children xsi:type="editmodel:WireLabelEditModel" size="0,14" anchorKind="MiddlePart"/>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" name="DataSetBuilder" location="40,168" size="138,29" id="org.dbunit/DataSetBuilder" runTimeClassModel="table(Ljava.lang.String;),col(Ljava.lang.String;I),table(Ljava.lang.String;Ljava.lang.String;),cols([Ljava.lang.String;),build(),cols([Lorg.dbunit.Column;),row([Ljava.lang.Object;)">
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <sourceConnections xsi:type="editmodel:GeneralizationEditModel" autoLocated="true" id="org.dbunit/DataSet&lt;-org.dbunit/DataSetBuilder" source="//@children.7" target="//@children.8" targetEnd="//@children.7/@sourceConnections.0/@children.1" sourceEnd="//@children.7/@sourceConnections.0/@children.0" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:AssociationEndEditModel" location="138,14" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="0,30"/>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:AssociationEditModel" id="org.dbunit/DataSet@dataSet+org.dbunit/DataSetBuilder@dataSetBuilder" source="//@children.7" target="//@children.8" targetEnd="//@children.7/@sourceConnections.1/@children.1" label="//@children.7/@sourceConnections.1/@children.2" sourceEnd="//@children.7/@sourceConnections.1/@children.0" connectionRouterKind="Manhattan">
+      <children xsi:type="editmodel:AssociationEndEditModel" name="dataSetBuilder" location="64,0" id="org.dbunit/DataSet@dataSet+org.dbunit/DataSetBuilder@dataSetBuilder|org.dbunit/DataSetBuilder#dataSetBuilder" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" name="dataSet" location="14,-3" id="org.dbunit/DataSet@dataSet+org.dbunit/DataSetBuilder@dataSetBuilder|org.dbunit/DataSet#dataSet" multiplicityLabel="//@children.7/@sourceConnections.1/@children.1/@children.1" roleLabel="//@children.7/@sourceConnections.1/@children.1/@children.0" navigable="true">
+        <children xsi:type="editmodel:LabelEditModel" name=" - dataSet" location="296,131" size="47,14" anchorKind="LastPart"/>
+        <children xsi:type="editmodel:LabelEditModel" name="0..1" location="264,131" size="18,14" anchorKind="LastPart"/>
+      </children>
+      <children xsi:type="editmodel:WireLabelEditModel" size="0,14" anchorKind="MiddlePart"/>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" targetConnections="//@children.11/@sourceConnections.0 //@children.7/@sourceConnections.0 //@children.10/@sourceConnections.0 //@children.10/@sourceConnections.1 //@children.7/@sourceConnections.1 //@children.34/@sourceConnections.0" name="DataSet" location="276,152" size="112,139" id="org.dbunit/DataSet" runTimeClassModel="query(Ljava.sql.Connection;Ljava.lang.String;),queryTables(Ljava.sql.Connection;[Ljava.lang.String;),subtract([Lorg.dbunit.DataSet;),merge([Lorg.dbunit.DataSet;),intersect([Lorg.dbunit.DataSet;)">
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="89,90">
+      <children xsi:type="editmodel:MethodEditModel" name="merge" id="org.dbunit/DataSet#merge([Lorg.dbunit.DataSet;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="subtract" id="org.dbunit/DataSet#subtract([Lorg.dbunit.DataSet;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="intersect" id="org.dbunit/DataSet#intersect([Lorg.dbunit.DataSet;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="query" id="org.dbunit/DataSet#query(Ljava.sql.Connection;Ljava.lang.String;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="queryTables" id="org.dbunit/DataSet#queryTables(Ljava.sql.Connection;[Ljava.lang.String;)"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <sourceConnections xsi:type="editmodel:AssociationEditModel" autoLocated="true" id="org.dbunit/Schema@schemas+org.dbunit/DataSet@dataSet" source="//@children.8" target="//@children.9" targetEnd="//@children.8/@sourceConnections.0/@children.1" label="//@children.8/@sourceConnections.0/@children.2" sourceEnd="//@children.8/@sourceConnections.0/@children.0" connectionRouterKind="Manhattan">
+      <children xsi:type="editmodel:AssociationEndEditModel" name="dataSet" location="112,115" id="org.dbunit/Schema@schemas+org.dbunit/DataSet@dataSet|org.dbunit/DataSet#dataSet" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" name="schemas" location="0,24" id="org.dbunit/Schema@schemas+org.dbunit/DataSet@dataSet|org.dbunit/Schema#schemas" multiplicityLabel="//@children.8/@sourceConnections.0/@children.1/@children.1" roleLabel="//@children.8/@sourceConnections.0/@children.1/@children.0" navigable="true" orderingKind="1">
+        <children xsi:type="editmodel:LabelEditModel" name=" - schemas" location="432,245" size="54,14" anchorKind="LastPart"/>
+        <children xsi:type="editmodel:LabelEditModel" name="*" location="482,273" size="4,14" anchorKind="LastPart"/>
+      </children>
+      <children xsi:type="editmodel:WireLabelEditModel" size="0,14" anchorKind="MiddlePart"/>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:AssociationEditModel" autoLocated="true" id="org.dbunit/Row@rows+org.dbunit/DataSet@dataSet" source="//@children.8" target="//@children.5" targetEnd="//@children.8/@sourceConnections.1/@children.1" label="//@children.8/@sourceConnections.1/@children.2" sourceEnd="//@children.8/@sourceConnections.1/@children.0" connectionRouterKind="Manhattan">
+      <children xsi:type="editmodel:AssociationEndEditModel" name="dataSet" location="112,43" id="org.dbunit/Row@rows+org.dbunit/DataSet@dataSet|org.dbunit/DataSet#dataSet" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" name="rows" location="0,28" id="org.dbunit/Row@rows+org.dbunit/DataSet@dataSet|org.dbunit/Row#rows" multiplicityLabel="//@children.8/@sourceConnections.1/@children.1/@children.1" roleLabel="//@children.8/@sourceConnections.1/@children.1/@children.0" navigable="true" orderingKind="1">
+        <children xsi:type="editmodel:LabelEditModel" name=" - rows" location="446,173" size="36,14" anchorKind="LastPart"/>
+        <children xsi:type="editmodel:LabelEditModel" name="*" location="478,201" size="4,14" anchorKind="LastPart"/>
+      </children>
+      <children xsi:type="editmodel:WireLabelEditModel" size="0,14" anchorKind="MiddlePart"/>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" targetConnections="//@children.8/@sourceConnections.0" name="Schema" location="494,243" size="102,57" id="org.dbunit/Schema" runTimeClassModel="name">
+    <children xsi:type="editmodel:CompartmentEditModel" size="79,18">
+      <children xsi:type="editmodel:AttributeEditModel" name="name" id="org.dbunit/Schema#name"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <sourceConnections xsi:type="editmodel:AssociationEditModel" id="org.dbunit/Table@tables+org.dbunit/Schema@schema" source="//@children.9" target="//@children.6" targetEnd="//@children.9/@sourceConnections.0/@children.1" label="//@children.9/@sourceConnections.0/@children.2" sourceEnd="//@children.9/@sourceConnections.0/@children.0" connectionRouterKind="Manhattan">
+      <children xsi:type="editmodel:AssociationEndEditModel" name="schema" location="102,29" id="org.dbunit/Table@tables+org.dbunit/Schema@schema|org.dbunit/Schema#schema" attachSource="true" multiplicityLabel="//@children.9/@sourceConnections.0/@children.0/@children.1" roleLabel="//@children.9/@sourceConnections.0/@children.0/@children.0" navigable="true">
+        <children xsi:type="editmodel:LabelEditModel" name=" - schema" location="603,279" size="48,14" anchorKind="FirstPart"/>
+        <children xsi:type="editmodel:LabelEditModel" name="0..1" location="603,251" size="18,14" anchorKind="FirstPart"/>
+      </children>
+      <children xsi:type="editmodel:AssociationEndEditModel" name="tables" location="48,56" id="org.dbunit/Table@tables+org.dbunit/Schema@schema|org.dbunit/Table#tables" multiplicityLabel="//@children.9/@sourceConnections.0/@children.1/@children.1" roleLabel="//@children.9/@sourceConnections.0/@children.1/@children.0" navigable="true" orderingKind="1">
+        <children xsi:type="editmodel:LabelEditModel" name=" - tables" location="771,231" size="39,14" anchorKind="LastPart"/>
+        <children xsi:type="editmodel:LabelEditModel" name="*" location="753,231" size="4,14" anchorKind="LastPart"/>
+      </children>
+      <children xsi:type="editmodel:WireLabelEditModel" size="0,14" anchorKind="MiddlePart"/>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" name="CompositeDataSet" location="238,355" size="159,29" id="org.dbunit/CompositeDataSet" runTimeClassModel="">
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <sourceConnections xsi:type="editmodel:GeneralizationEditModel" id="org.dbunit/DataSet&lt;-org.dbunit/CompositeDataSet" source="//@children.10" target="//@children.8" targetEnd="//@children.10/@sourceConnections.0/@children.1" sourceEnd="//@children.10/@sourceConnections.0/@children.0" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:AssociationEndEditModel" location="54,-1" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="20,136"/>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:AssociationEditModel" id="org.dbunit/DataSet@dataSets+org.dbunit/CompositeDataSet@compositeDataSet" source="//@children.10" target="//@children.8" targetEnd="//@children.10/@sourceConnections.1/@children.1" label="//@children.10/@sourceConnections.1/@children.2" sourceEnd="//@children.10/@sourceConnections.1/@children.0" connectionRouterKind="Manhattan">
+      <children xsi:type="editmodel:AssociationEndEditModel" name="compositeDataSet" location="122,-1" id="org.dbunit/DataSet@dataSets+org.dbunit/CompositeDataSet@compositeDataSet|org.dbunit/CompositeDataSet#compositeDataSet" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" name="dataSets" location="84,136" id="org.dbunit/DataSet@dataSets+org.dbunit/CompositeDataSet@compositeDataSet|org.dbunit/DataSet#dataSets" multiplicityLabel="//@children.10/@sourceConnections.1/@children.1/@children.1" roleLabel="//@children.10/@sourceConnections.1/@children.1/@children.0" navigable="true" orderingKind="1">
+        <children xsi:type="editmodel:LabelEditModel" name=" - dataSets" location="367,297" size="53,14" anchorKind="LastPart"/>
+        <children xsi:type="editmodel:LabelEditModel" name="*" location="349,297" size="4,14" anchorKind="LastPart"/>
+      </children>
+      <children xsi:type="editmodel:WireLabelEditModel" size="0,14" anchorKind="MiddlePart"/>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" name="FilteredDataSet" location="39,208" size="141,29" id="org.dbunit/FilteredDataSet" runTimeClassModel="">
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <sourceConnections xsi:type="editmodel:GeneralizationEditModel" autoLocated="true" id="org.dbunit/DataSet&lt;-org.dbunit/FilteredDataSet" source="//@children.11" target="//@children.8" targetEnd="//@children.11/@sourceConnections.0/@children.1" sourceEnd="//@children.11/@sourceConnections.0/@children.0" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:AssociationEndEditModel" location="141,14" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="0,70"/>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:AssociationEditModel" autoLocated="true" id="org.dbunit/Filter@filters+org.dbunit/FilteredDataSet@filteredDataSet" source="//@children.11" target="//@children.12" targetEnd="//@children.11/@sourceConnections.1/@children.1" label="//@children.11/@sourceConnections.1/@children.2" sourceEnd="//@children.11/@sourceConnections.1/@children.0" connectionRouterKind="Manhattan">
+      <children xsi:type="editmodel:AssociationEndEditModel" name="filteredDataSet" location="70,29" id="org.dbunit/Filter@filters+org.dbunit/FilteredDataSet@filteredDataSet|org.dbunit/FilteredDataSet#filteredDataSet" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" name="filters" location="38,0" id="org.dbunit/Filter@filters+org.dbunit/FilteredDataSet@filteredDataSet|org.dbunit/Filter#filters" multiplicityLabel="//@children.11/@sourceConnections.1/@children.1/@children.1" roleLabel="//@children.11/@sourceConnections.1/@children.1/@children.0" navigable="true" orderingKind="1">
+        <children xsi:type="editmodel:LabelEditModel" name=" - filters" location="115,255" size="37,14" anchorKind="LastPart"/>
+        <children xsi:type="editmodel:LabelEditModel" name="*" location="97,255" size="4,14" anchorKind="LastPart"/>
+      </children>
+      <children xsi:type="editmodel:WireLabelEditModel" size="0,14" anchorKind="MiddlePart"/>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:InterfaceEditModel" targetConnections="//@children.11/@sourceConnections.1 //@children.13/@sourceConnections.0" name="Filter" location="71,276" size="78,43" id="org.dbunit/Filter" runTimeClassModel="">
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" name="IgnoreColumnsFilter" location="23,373" size="171,29" id="org.dbunit/IgnoreColumnsFilter" runTimeClassModel="">
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <sourceConnections xsi:type="editmodel:GeneralizationEditModel" autoLocated="true" id="org.dbunit/Filter&lt;-org.dbunit/IgnoreColumnsFilter" source="//@children.13" target="//@children.12" targetEnd="//@children.13/@sourceConnections.0/@children.1" sourceEnd="//@children.13/@sourceConnections.0/@children.0" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:AssociationEndEditModel" location="86,0" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="38,43"/>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" name="DataSetFactory" location="38,5" size="139,103" id="org.dbunit/DataSetFactory" runTimeClassModel="load(Ljava.lang.String;),load(Ljava.lang.String;Lorg.dbunit.Format;),save(Ljava.lang.String;Lorg.dbunit.Format;Lorg.dbunit.DataSet;)">
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="54,54">
+      <children xsi:type="editmodel:MethodEditModel" name="load" id="org.dbunit/DataSetFactory#load(Ljava.lang.String;Lorg.dbunit.Format;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="load" id="org.dbunit/DataSetFactory#load(Ljava.lang.String;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="save" id="org.dbunit/DataSetFactory#save(Ljava.lang.String;Lorg.dbunit.Format;Lorg.dbunit.DataSet;)"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <sourceConnections xsi:type="editmodel:AssociationEditModel" autoLocated="true" id="org.dbunit/DataSetFormatHandler@handlers+org.dbunit/DataSetFactory@dataSetFactory1" source="//@children.14" target="//@children.27" targetEnd="//@children.14/@sourceConnections.0/@children.1" label="//@children.14/@sourceConnections.0/@children.2" sourceEnd="//@children.14/@sourceConnections.0/@children.0" connectionRouterKind="Manhattan">
+      <children xsi:type="editmodel:AssociationEndEditModel" name="dataSetFactory1" location="139,37" id="org.dbunit/DataSetFormatHandler@handlers+org.dbunit/DataSetFactory@dataSetFactory1|org.dbunit/DataSetFactory#dataSetFactory1" attachSource="true">
+        <children xsi:type="editmodel:QualifierAttributeEditModel" name="format" location="173,31" size="46,23" id=""/>
+      </children>
+      <children xsi:type="editmodel:AssociationEndEditModel" name="handlers" location="0,21" id="org.dbunit/DataSetFormatHandler@handlers+org.dbunit/DataSetFactory@dataSetFactory1|org.dbunit/DataSetFormatHandler#handlers" multiplicityLabel="//@children.14/@sourceConnections.0/@children.1/@children.1" roleLabel="//@children.14/@sourceConnections.0/@children.1/@children.0" navigable="true">
+        <children xsi:type="editmodel:LabelEditModel" name=" - handlers" location="393,20" size="52,14" anchorKind="LastPart"/>
+        <children xsi:type="editmodel:LabelEditModel" name="0..1" location="427,48" size="18,14" anchorKind="LastPart"/>
+      </children>
+      <children xsi:type="editmodel:WireLabelEditModel" size="0,14" anchorKind="MiddlePart"/>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:DependencyEditModel" autoLocated="true" id="org.dbunit/DataSetFactory-Soyatec::Import->org.dbunit/Format" source="//@children.14" target="//@children.3" targetEnd="//@children.14/@sourceConnections.1/@children.1" label="//@children.14/@sourceConnections.1/@children.2" sourceEnd="//@children.14/@sourceConnections.1/@children.0" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:AssociationEndEditModel" location="139,11" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="0,31"/>
+      <children xsi:type="editmodel:WireLabelEditModel" name="«Import»" size="41,14" anchorKind="MiddlePart"/>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" name="DataBaseTestCase" location="902,241" size="158,85" id="org.dbunit/DataBaseTestCase" runTimeClassModel="DataBaseTestCase(),DataBaseTestCase(Ljava.lang.String;)">
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="122,36">
+      <children xsi:type="editmodel:MethodEditModel" name="DataBaseTestCase" id="org.dbunit/DataBaseTestCase#DataBaseTestCase()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="DataBaseTestCase" id="org.dbunit/DataBaseTestCase#DataBaseTestCase(Ljava.lang.String;)"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <sourceConnections xsi:type="editmodel:DependencyEditModel" autoLocated="true" id="org.dbunit/DataBaseTestCase->org.dbunit/Assert" source="//@children.15" target="//@children.0" targetEnd="//@children.15/@sourceConnections.0/@children.1" label="//@children.15/@sourceConnections.0/@children.2" sourceEnd="//@children.15/@sourceConnections.0/@children.0" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:AssociationEndEditModel" location="78,0" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="68,121"/>
+      <children xsi:type="editmodel:WireLabelEditModel" size="0,14" anchorKind="MiddlePart"/>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:AssociationEditModel" id="org.dbunit/DataBaseTestCaseSupport@dataBaseTestCaseSupport+org.dbunit/DataBaseTestCase@dataBaseTestCase" source="//@children.15" target="//@children.33" targetEnd="//@children.15/@sourceConnections.1/@children.1" label="//@children.15/@sourceConnections.1/@children.2" sourceEnd="//@children.15/@sourceConnections.1/@children.0" connectionRouterKind="Manhattan">
+      <children xsi:type="editmodel:AssociationEndEditModel" name="dataBaseTestCase" location="0,75" id="org.dbunit/DataBaseTestCaseSupport@dataBaseTestCaseSupport+org.dbunit/DataBaseTestCase@dataBaseTestCase|org.dbunit/DataBaseTestCase#dataBaseTestCase" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" name="dataBaseTestCaseSupport" location="109,0" id="org.dbunit/DataBaseTestCaseSupport@dataBaseTestCaseSupport+org.dbunit/DataBaseTestCase@dataBaseTestCase|org.dbunit/DataBaseTestCaseSupport#dataBaseTestCaseSupport" multiplicityLabel="//@children.15/@sourceConnections.1/@children.1/@children.1" roleLabel="//@children.15/@sourceConnections.1/@children.1/@children.0" navigable="true">
+        <children xsi:type="editmodel:LabelEditModel" name=" - dataBaseTestCaseSupport" location="638,351" size="139,14" anchorKind="LastPart"/>
+        <children xsi:type="editmodel:LabelEditModel" name="1" location="791,351" size="6,14" anchorKind="LastPart"/>
+      </children>
+      <children xsi:type="editmodel:WireLabelEditModel" size="0,14" anchorKind="MiddlePart"/>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" name="TransactionOperation" location="445,555" size="178,29" id="org.dbunit/TransactionOperation" runTimeClassModel="">
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <sourceConnections xsi:type="editmodel:GeneralizationEditModel" autoLocated="true" id="org.dbunit/DatabaseOperation&lt;-org.dbunit/TransactionOperation" source="//@children.16" target="//@children.2" targetEnd="//@children.16/@sourceConnections.0/@children.1" sourceEnd="//@children.16/@sourceConnections.0/@children.0" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:AssociationEndEditModel" location="178,14" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="0,49"/>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:AssociationEditModel" autoLocated="true" id="org.dbunit/DatabaseOperation@operation+org.dbunit/TransactionOperation@compositeDatabaseOperation" source="//@children.16" target="//@children.2" targetEnd="//@children.16/@sourceConnections.1/@children.1" label="//@children.16/@sourceConnections.1/@children.2" sourceEnd="//@children.16/@sourceConnections.1/@children.0" connectionRouterKind="Manhattan">
+      <children xsi:type="editmodel:AssociationEndEditModel" name="compositeDatabaseOperation" location="173,29" id="org.dbunit/DatabaseOperation@operation+org.dbunit/TransactionOperation@compositeDatabaseOperation|org.dbunit/TransactionOperation#compositeDatabaseOperation" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" name="operation" location="0,86" id="org.dbunit/DatabaseOperation@operation+org.dbunit/TransactionOperation@compositeDatabaseOperation|org.dbunit/DatabaseOperation#operation" multiplicityLabel="//@children.16/@sourceConnections.1/@children.1/@children.2" roleLabel="//@children.16/@sourceConnections.1/@children.1/@children.0" orderingLabel="//@children.16/@sourceConnections.1/@children.1/@children.1" navigable="true">
+        <children xsi:type="editmodel:LabelEditModel" name=" - operation" location="627,612" size="55,14" anchorKind="LastPart"/>
+        <children xsi:type="editmodel:LabelEditModel" name="{order}" location="648,584" size="34,14" anchorKind="LastPart"/>
+        <children xsi:type="editmodel:LabelEditModel" name="0..1" location="664,626" size="18,14" anchorKind="LastPart"/>
+      </children>
+      <children xsi:type="editmodel:WireLabelEditModel" size="0,14" anchorKind="MiddlePart"/>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:GeneralizationEditModel" autoLocated="true" id="org.dbunit/AbstractDatabaseOperation&lt;-org.dbunit/TransactionOperation" source="//@children.16" target="//@children.24" targetEnd="//@children.16/@sourceConnections.2/@children.1" sourceEnd="//@children.16/@sourceConnections.2/@children.0" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:AssociationEndEditModel" location="178,14" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="0,42"/>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" name="InsertOperation" location="634,691" size="140,29" id="org.dbunit/InsertOperation" runTimeClassModel="">
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <sourceConnections xsi:type="editmodel:GeneralizationEditModel" autoLocated="true" id="org.dbunit/DatabaseOperation&lt;-org.dbunit/InsertOperation" source="//@children.17" target="//@children.2" targetEnd="//@children.17/@sourceConnections.0/@children.1" sourceEnd="//@children.17/@sourceConnections.0/@children.0" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:AssociationEndEditModel" location="97,0" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="41,99"/>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:GeneralizationEditModel" autoLocated="true" id="org.dbunit/AbstractDatabaseOperation&lt;-org.dbunit/InsertOperation" source="//@children.17" target="//@children.24" targetEnd="//@children.17/@sourceConnections.1/@children.1" sourceEnd="//@children.17/@sourceConnections.1/@children.0" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:AssociationEndEditModel" location="107,0" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="0,82"/>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" name="RefreshOperation" location="474,691" size="153,29" id="org.dbunit/RefreshOperation" runTimeClassModel="">
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <sourceConnections xsi:type="editmodel:GeneralizationEditModel" autoLocated="true" id="org.dbunit/DatabaseOperation&lt;-org.dbunit/RefreshOperation" source="//@children.18" target="//@children.2" targetEnd="//@children.18/@sourceConnections.0/@children.1" sourceEnd="//@children.18/@sourceConnections.0/@children.0" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:AssociationEndEditModel" location="99,0" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="0,99"/>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:GeneralizationEditModel" autoLocated="true" id="org.dbunit/AbstractDatabaseOperation&lt;-org.dbunit/RefreshOperation" source="//@children.18" target="//@children.24" targetEnd="//@children.18/@sourceConnections.1/@children.1" sourceEnd="//@children.18/@sourceConnections.1/@children.0" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:AssociationEndEditModel" location="129,0" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="0,70"/>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" name="CleanInsertOperation" location="690,741" size="177,29" id="org.dbunit/CleanInsertOperation" runTimeClassModel="">
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <sourceConnections xsi:type="editmodel:GeneralizationEditModel" autoLocated="true" id="org.dbunit/DatabaseOperation&lt;-org.dbunit/CleanInsertOperation" source="//@children.19" target="//@children.2" targetEnd="//@children.19/@sourceConnections.0/@children.1" sourceEnd="//@children.19/@sourceConnections.0/@children.0" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:AssociationEndEditModel" location="81,0" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="81,99"/>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:GeneralizationEditModel" autoLocated="true" id="org.dbunit/AbstractDatabaseOperation&lt;-org.dbunit/CleanInsertOperation" source="//@children.19" target="//@children.24" targetEnd="//@children.19/@sourceConnections.1/@children.1" sourceEnd="//@children.19/@sourceConnections.1/@children.0" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:AssociationEndEditModel" location="110,0" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="40,85"/>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" name="UpdateOperation" location="777,691" size="150,29" id="org.dbunit/UpdateOperation" runTimeClassModel="">
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <sourceConnections xsi:type="editmodel:GeneralizationEditModel" autoLocated="true" id="org.dbunit/DatabaseOperation&lt;-org.dbunit/UpdateOperation" source="//@children.20" target="//@children.2" targetEnd="//@children.20/@sourceConnections.0/@children.1" sourceEnd="//@children.20/@sourceConnections.0/@children.0" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:AssociationEndEditModel" location="38,0" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="125,99"/>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:GeneralizationEditModel" autoLocated="true" id="org.dbunit/AbstractDatabaseOperation&lt;-org.dbunit/UpdateOperation" source="//@children.20" target="//@children.24" targetEnd="//@children.20/@sourceConnections.1/@children.1" sourceEnd="//@children.20/@sourceConnections.1/@children.0" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:AssociationEndEditModel" location="97,0" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="39,85"/>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" name="DeleteOperation" location="950,691" size="146,29" id="org.dbunit/DeleteOperation" runTimeClassModel="">
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <sourceConnections xsi:type="editmodel:GeneralizationEditModel" autoLocated="true" id="org.dbunit/DatabaseOperation&lt;-org.dbunit/DeleteOperation" source="//@children.21" target="//@children.2" targetEnd="//@children.21/@sourceConnections.0/@children.1" sourceEnd="//@children.21/@sourceConnections.0/@children.0" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:AssociationEndEditModel" location="47,0" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="164,93"/>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:GeneralizationEditModel" autoLocated="true" id="org.dbunit/AbstractDatabaseOperation&lt;-org.dbunit/DeleteOperation" source="//@children.21" target="//@children.24" targetEnd="//@children.21/@sourceConnections.1/@children.1" sourceEnd="//@children.21/@sourceConnections.1/@children.0" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:AssociationEndEditModel" location="77,0" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="67,85"/>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" name="DeleteAllOperation" location="503,741" size="163,29" id="org.dbunit/DeleteAllOperation" runTimeClassModel="">
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <sourceConnections xsi:type="editmodel:GeneralizationEditModel" autoLocated="true" id="org.dbunit/DatabaseOperation&lt;-org.dbunit/DeleteAllOperation" source="//@children.22" target="//@children.2" targetEnd="//@children.22/@sourceConnections.0/@children.1" sourceEnd="//@children.22/@sourceConnections.0/@children.0" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:AssociationEndEditModel" location="95,0" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="31,99"/>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:GeneralizationEditModel" autoLocated="true" id="org.dbunit/AbstractDatabaseOperation&lt;-org.dbunit/DeleteAllOperation" source="//@children.22" target="//@children.24" targetEnd="//@children.22/@sourceConnections.1/@children.1" sourceEnd="//@children.22/@sourceConnections.1/@children.0" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:AssociationEndEditModel" location="117,0" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="0,83"/>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" name="TruncateOperation" location="890,741" size="160,29" id="org.dbunit/TruncateOperation" runTimeClassModel="">
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <sourceConnections xsi:type="editmodel:GeneralizationEditModel" autoLocated="true" id="org.dbunit/DatabaseOperation&lt;-org.dbunit/TruncateOperation" source="//@children.23" target="//@children.2" targetEnd="//@children.23/@sourceConnections.0/@children.1" sourceEnd="//@children.23/@sourceConnections.0/@children.0" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:AssociationEndEditModel" location="65,0" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="135,99"/>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:GeneralizationEditModel" autoLocated="true" id="org.dbunit/AbstractDatabaseOperation&lt;-org.dbunit/TruncateOperation" source="//@children.23" target="//@children.24" targetEnd="//@children.23/@sourceConnections.1/@children.1" sourceEnd="//@children.23/@sourceConnections.1/@children.0" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:AssociationEndEditModel" location="114,0" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="44,85"/>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" targetConnections="//@children.16/@sourceConnections.2 //@children.17/@sourceConnections.1 //@children.18/@sourceConnections.1 //@children.19/@sourceConnections.1 //@children.20/@sourceConnections.1 //@children.21/@sourceConnections.1 //@children.22/@sourceConnections.1 //@children.23/@sourceConnections.1" name="AbstractDatabaseOperation" location="960,527" size="215,85" id="org.dbunit/AbstractDatabaseOperation" runTimeClassModel="removeListener(Lorg.dbunit.OperationListener;),addListener(Lorg.dbunit.OperationListener;)">
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="105,36">
+      <children xsi:type="editmodel:MethodEditModel" name="addListener" id="org.dbunit/AbstractDatabaseOperation#addListener(Lorg.dbunit.OperationListener;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="removeListener" id="org.dbunit/AbstractDatabaseOperation#removeListener(Lorg.dbunit.OperationListener;)"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <sourceConnections xsi:type="editmodel:GeneralizationEditModel" autoLocated="true" id="org.dbunit/DatabaseOperation&lt;-org.dbunit/AbstractDatabaseOperation" source="//@children.24" target="//@children.2" targetEnd="//@children.24/@sourceConnections.0/@children.1" sourceEnd="//@children.24/@sourceConnections.0/@children.0" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:AssociationEndEditModel" location="0,42" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="164,49"/>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:AssociationEditModel" autoLocated="true" id="org.dbunit/OperationListener@listeners+org.dbunit/AbstractDatabaseOperation@abstractDatabaseOperation" source="//@children.24" target="//@children.4" targetEnd="//@children.24/@sourceConnections.1/@children.1" label="//@children.24/@sourceConnections.1/@children.2" sourceEnd="//@children.24/@sourceConnections.1/@children.0" connectionRouterKind="Manhattan">
+      <children xsi:type="editmodel:AssociationEndEditModel" name="abstractDatabaseOperation" location="107,0" id="org.dbunit/OperationListener@listeners+org.dbunit/AbstractDatabaseOperation@abstractDatabaseOperation|org.dbunit/AbstractDatabaseOperation#abstractDatabaseOperation" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" name="listeners" location="78,43" id="org.dbunit/OperationListener@listeners+org.dbunit/AbstractDatabaseOperation@abstractDatabaseOperation|org.dbunit/OperationListener#listeners" multiplicityLabel="//@children.24/@sourceConnections.1/@children.1/@children.1" roleLabel="//@children.24/@sourceConnections.1/@children.1/@children.0" navigable="true">
+        <children xsi:type="editmodel:LabelEditModel" name=" - listeners" location="1073,499" size="51,14" anchorKind="LastPart"/>
+        <children xsi:type="editmodel:LabelEditModel" name="*" location="1055,499" size="4,14" anchorKind="LastPart"/>
+      </children>
+      <children xsi:type="editmodel:WireLabelEditModel" size="0,14" anchorKind="MiddlePart"/>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:InterfaceEditModel" targetConnections="//@children.33/@sourceConnections.0" name="Dialect" location="420,354" size="203,135" id="org.dbunit/Dialect" runTimeClassModel="setTypeMapping(Ljava.lang.Class;Lorg.dbunit.TypeHandler;),isConstraintDisablingSupported(),getTypeMappings(),disableConstraints(Lorg.dbunit.DataSet;),getCaseAwareName()">
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="180,72">
+      <children xsi:type="editmodel:MethodEditModel" name="isConstraintDisablingSupported" id="org.dbunit/Dialect#isConstraintDisablingSupported()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getCaseAwareName" id="org.dbunit/Dialect#getCaseAwareName()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getTypeMappings" id="org.dbunit/Dialect#getTypeMappings()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="disableConstraints" id="org.dbunit/Dialect#disableConstraints(Lorg.dbunit.DataSet;)"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:InterfaceEditModel" targetConnections="//@children.33/@sourceConnections.1" name="Connection" location="980,365" size="175,43" id="java.sql/Connection" runTimeClassModel="">
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:InterfaceEditModel" targetConnections="//@children.28/@sourceConnections.0 //@children.29/@sourceConnections.0 //@children.30/@sourceConnections.0 //@children.31/@sourceConnections.0 //@children.32/@sourceConnections.0 //@children.14/@sourceConnections.0" name="DataSetFormatHandler" location="453,21" size="187,43" id="org.dbunit/DataSetFormatHandler" runTimeClassModel="">
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <sourceConnections xsi:type="editmodel:AssociationEditModel" id="org.dbunit/StreamingDataSet@streamingDataSet+org.dbunit/DataSetFormatHandler@handler" source="//@children.27" target="//@children.34" targetEnd="//@children.27/@sourceConnections.0/@children.1" label="//@children.27/@sourceConnections.0/@children.2" sourceEnd="//@children.27/@sourceConnections.0/@children.0" connectionRouterKind="Manhattan">
+      <children xsi:type="editmodel:AssociationEndEditModel" name="handler" location="99,43" id="org.dbunit/StreamingDataSet@streamingDataSet+org.dbunit/DataSetFormatHandler@handler|org.dbunit/DataSetFormatHandler#handler" attachSource="true" multiplicityLabel="//@children.27/@sourceConnections.0/@children.0/@children.1" roleLabel="//@children.27/@sourceConnections.0/@children.0/@children.0" navigable="true">
+        <children xsi:type="editmodel:LabelEditModel" name=" - handler" location="559,71" size="46,14" anchorKind="FirstPart"/>
+        <children xsi:type="editmodel:LabelEditModel" name="0..1" location="527,71" size="18,14" anchorKind="FirstPart"/>
+      </children>
+      <children xsi:type="editmodel:AssociationEndEditModel" name="streamingDataSet" location="157,14" id="org.dbunit/StreamingDataSet@streamingDataSet+org.dbunit/DataSetFormatHandler@handler|org.dbunit/StreamingDataSet#streamingDataSet" multiplicityLabel="//@children.27/@sourceConnections.0/@children.1/@children.1" roleLabel="//@children.27/@sourceConnections.0/@children.1/@children.0" navigable="true" changeability="2">
+        <children xsi:type="editmodel:LabelEditModel" name=" + streamingDataSet" location="407,95" size="97,14" anchorKind="LastPart"/>
+        <children xsi:type="editmodel:LabelEditModel" name="0..1" location="407,67" size="18,14" anchorKind="LastPart"/>
+      </children>
+      <children xsi:type="editmodel:WireLabelEditModel" size="0,14" anchorKind="MiddlePart"/>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" name="XMLFormatHandler" location="276,-77" size="165,29" id="org.dbunit/XMLFormatHandler" runTimeClassModel="">
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <sourceConnections xsi:type="editmodel:GeneralizationEditModel" autoLocated="true" id="org.dbunit/DataSetFormatHandler&lt;-org.dbunit/XMLFormatHandler" source="//@children.28" target="//@children.27" targetEnd="//@children.28/@sourceConnections.0/@children.1" sourceEnd="//@children.28/@sourceConnections.0/@children.0" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:AssociationEndEditModel" location="109,30" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="55,0"/>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" name="XLSFormatHandler" location="675,-76" size="163,29" id="org.dbunit/XLSFormatHandler" runTimeClassModel="">
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <sourceConnections xsi:type="editmodel:GeneralizationEditModel" autoLocated="true" id="org.dbunit/DataSetFormatHandler&lt;-org.dbunit/XLSFormatHandler" source="//@children.29" target="//@children.27" targetEnd="//@children.29/@sourceConnections.0/@children.1" sourceEnd="//@children.29/@sourceConnections.0/@children.0" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:AssociationEndEditModel" location="51,30" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="135,0"/>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" name="FlatXMLFormatHandler" location="464,-76" size="189,29" id="org.dbunit/FlatXMLFormatHandler" runTimeClassModel="">
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <sourceConnections xsi:type="editmodel:GeneralizationEditModel" autoLocated="true" id="org.dbunit/DataSetFormatHandler&lt;-org.dbunit/FlatXMLFormatHandler" source="//@children.30" target="//@children.27" targetEnd="//@children.30/@sourceConnections.0/@children.1" sourceEnd="//@children.30/@sourceConnections.0/@children.0" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:AssociationEndEditModel" location="87,30" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="98,0"/>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" name="JSONFormatHandler" location="857,-76" size="172,29" id="org.dbunit/JSONFormatHandler" runTimeClassModel="">
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <sourceConnections xsi:type="editmodel:GeneralizationEditModel" autoLocated="true" id="org.dbunit/DataSetFormatHandler&lt;-org.dbunit/JSONFormatHandler" source="//@children.31" target="//@children.27" targetEnd="//@children.31/@sourceConnections.0/@children.1" sourceEnd="//@children.31/@sourceConnections.0/@children.0" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:AssociationEndEditModel" location="29,30" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="173,0"/>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" name="CSVFormatHandler" location="92,-76" size="164,29" id="org.dbunit/CSVFormatHandler" runTimeClassModel="">
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <sourceConnections xsi:type="editmodel:GeneralizationEditModel" autoLocated="true" id="org.dbunit/DataSetFormatHandler&lt;-org.dbunit/CSVFormatHandler" source="//@children.32" target="//@children.27" targetEnd="//@children.32/@sourceConnections.0/@children.1" sourceEnd="//@children.32/@sourceConnections.0/@children.0" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:AssociationEndEditModel" location="136,30" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="18,0"/>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" targetConnections="//@children.15/@sourceConnections.1" name="DataBaseTestCaseSupport" location="675,372" size="208,29" id="org.dbunit/DataBaseTestCaseSupport" runTimeClassModel="">
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <sourceConnections xsi:type="editmodel:AssociationEditModel" autoLocated="true" id="org.dbunit/Dialect@dialect+org.dbunit/DataBaseTestCaseSupport@dataBaseTestCaseSupport" source="//@children.33" target="//@children.25" targetEnd="//@children.33/@sourceConnections.0/@children.1" label="//@children.33/@sourceConnections.0/@children.2" sourceEnd="//@children.33/@sourceConnections.0/@children.0" connectionRouterKind="Manhattan">
+      <children xsi:type="editmodel:AssociationEndEditModel" name="dataBaseTestCaseSupport" location="0,14" id="org.dbunit/Dialect@dialect+org.dbunit/DataBaseTestCaseSupport@dataBaseTestCaseSupport|org.dbunit/DataBaseTestCaseSupport#dataBaseTestCaseSupport" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" name="dialect" location="203,32" id="org.dbunit/Dialect@dialect+org.dbunit/DataBaseTestCaseSupport@dataBaseTestCaseSupport|org.dbunit/Dialect#dialect" multiplicityLabel="//@children.33/@sourceConnections.0/@children.1/@children.1" roleLabel="//@children.33/@sourceConnections.0/@children.1/@children.0" navigable="true">
+        <children xsi:type="editmodel:LabelEditModel" name=" - dialect" location="629,364" size="41,14" anchorKind="LastPart"/>
+        <children xsi:type="editmodel:LabelEditModel" name="0..1" location="629,392" size="18,14" anchorKind="LastPart"/>
+      </children>
+      <children xsi:type="editmodel:WireLabelEditModel" size="0,14" anchorKind="MiddlePart"/>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:AssociationEditModel" autoLocated="true" id="java.sql/Connection@connection+org.dbunit/DataBaseTestCaseSupport@dataBaseTestCaseSupport" source="//@children.33" target="//@children.26" targetEnd="//@children.33/@sourceConnections.1/@children.1" label="//@children.33/@sourceConnections.1/@children.2" sourceEnd="//@children.33/@sourceConnections.1/@children.0" connectionRouterKind="Manhattan">
+      <children xsi:type="editmodel:AssociationEndEditModel" name="dataBaseTestCaseSupport" location="208,14" id="java.sql/Connection@connection+org.dbunit/DataBaseTestCaseSupport@dataBaseTestCaseSupport|org.dbunit/DataBaseTestCaseSupport#dataBaseTestCaseSupport" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" name="connection" location="0,21" id="java.sql/Connection@connection+org.dbunit/DataBaseTestCaseSupport@dataBaseTestCaseSupport|java.sql/Connection#connection" multiplicityLabel="//@children.33/@sourceConnections.1/@children.1/@children.1" roleLabel="//@children.33/@sourceConnections.1/@children.1/@children.0" navigable="true">
+        <children xsi:type="editmodel:LabelEditModel" name=" - connection" location="910,364" size="63,14" anchorKind="LastPart"/>
+        <children xsi:type="editmodel:LabelEditModel" name="0..1" location="955,392" size="18,14" anchorKind="LastPart"/>
+      </children>
+      <children xsi:type="editmodel:WireLabelEditModel" size="0,14" anchorKind="MiddlePart"/>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:AssociationEditModel" id="org.dbunit/DatabaseOperation@setUpOperation+org.dbunit/DataBaseTestCaseSupport@dataBaseTestCaseSupport" source="//@children.33" target="//@children.2" targetEnd="//@children.33/@sourceConnections.2/@children.1" label="//@children.33/@sourceConnections.2/@children.2" sourceEnd="//@children.33/@sourceConnections.2/@children.0" connectionRouterKind="Manhattan">
+      <children xsi:type="editmodel:AssociationEndEditModel" name="dataBaseTestCaseSupport" location="96,29" id="org.dbunit/DatabaseOperation@setUpOperation+org.dbunit/DataBaseTestCaseSupport@dataBaseTestCaseSupport|org.dbunit/DataBaseTestCaseSupport#dataBaseTestCaseSupport" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" name="setUpOperation" location="19,0" id="org.dbunit/DatabaseOperation@setUpOperation+org.dbunit/DataBaseTestCaseSupport@dataBaseTestCaseSupport|org.dbunit/DatabaseOperation#setUpOperation" multiplicityLabel="//@children.33/@sourceConnections.2/@children.1/@children.1" roleLabel="//@children.33/@sourceConnections.2/@children.1/@children.0" navigable="true">
+        <children xsi:type="editmodel:LabelEditModel" name=" - setUpOperation" location="616,499" size="85,14" anchorKind="LastPart"/>
+        <children xsi:type="editmodel:LabelEditModel" name="0..1" location="715,499" size="18,14" anchorKind="LastPart"/>
+      </children>
+      <children xsi:type="editmodel:WireLabelEditModel" size="0,14" anchorKind="MiddlePart"/>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:AssociationEditModel" id="org.dbunit/DatabaseOperation@tearDownOperation+org.dbunit/DataBaseTestCaseSupport@dataBaseTestCaseSupport" source="//@children.33" target="//@children.2" targetEnd="//@children.33/@sourceConnections.3/@children.1" label="//@children.33/@sourceConnections.3/@children.2" sourceEnd="//@children.33/@sourceConnections.3/@children.0" connectionRouterKind="Manhattan">
+      <children xsi:type="editmodel:AssociationEndEditModel" name="dataBaseTestCaseSupport" location="116,29" id="org.dbunit/DatabaseOperation@tearDownOperation+org.dbunit/DataBaseTestCaseSupport@dataBaseTestCaseSupport|org.dbunit/DataBaseTestCaseSupport#dataBaseTestCaseSupport" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" name="tearDownOperation" location="146,0" id="org.dbunit/DatabaseOperation@tearDownOperation+org.dbunit/DataBaseTestCaseSupport@dataBaseTestCaseSupport|org.dbunit/DatabaseOperation#tearDownOperation" multiplicityLabel="//@children.33/@sourceConnections.3/@children.1/@children.1" roleLabel="//@children.33/@sourceConnections.3/@children.1/@children.0" navigable="true">
+        <children xsi:type="editmodel:LabelEditModel" name=" - tearDownOperation" location="843,499" size="105,14" anchorKind="LastPart"/>
+        <children xsi:type="editmodel:LabelEditModel" name="0..1" location="811,499" size="18,14" anchorKind="LastPart"/>
+      </children>
+      <children xsi:type="editmodel:WireLabelEditModel" size="0,14" anchorKind="MiddlePart"/>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" targetConnections="//@children.27/@sourceConnections.0" name="StreamingDataSet" location="243,74" size="158,29" id="org.dbunit/StreamingDataSet" runTimeClassModel="">
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <sourceConnections xsi:type="editmodel:GeneralizationEditModel" autoLocated="true" id="org.dbunit/DataSet&lt;-org.dbunit/StreamingDataSet" source="//@children.34" target="//@children.8" targetEnd="//@children.34/@sourceConnections.0/@children.1" sourceEnd="//@children.34/@sourceConnections.0/@children.0" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:AssociationEndEditModel" location="88,29" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="55,0"/>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" showAttributeProperty="true"/>
+  </children>
+  <diagramOptions xsi:type="options:ClassDiagramOptions" level="-1" showScope="InPackage" properties="wireOptions=1;Product=eUML2"/>
+  <boardSetting snapToGeometry="true" gridEnabled="true" gridSpacing="15,15" gridOrigin="0,0" rulerUnit="pixel" gridVisibility="false">
+    <leftRuler/>
+    <topRuler/>
+  </boardSetting>
+  <classDiagramPreferences xsi:type="editmodel:UMLClassDiagramPreference" showPopupBars="true" showConnectionHandles="true" attributeSorter="Natural" methodSorter="Natural" showClassStereotype="true" showPackageStereotype="true" showDependencyStereotype="true" showInterfaceStereotype="true" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" showAttributeProperty="true"/>
+</editmodel:ClassDiagramEditModel>
