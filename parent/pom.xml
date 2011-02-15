@@ -43,7 +43,7 @@
     <releasePluginVersion>2.1</releasePluginVersion>
     <resourcesPluginVersion>2.4.3</resourcesPluginVersion>
     <scmPluginVersion>1.4</scmPluginVersion>
-    <sitePluginVersion>3.0-beta-4-SNAPSHOT</sitePluginVersion>
+    <sitePluginVersion>3.0-beta-3</sitePluginVersion>
     <surefirePluginVersion>2.7.2</surefirePluginVersion>
     <taglistPluginVersion>2.4</taglistPluginVersion>
     <versionsPluginVersion>1.2</versionsPluginVersion>
