@@ -182,6 +182,7 @@ TODO enable when ready (has a build!)
       </plugin>
       <plugin>
         <artifactId>maven-assembly-plugin</artifactId>
+        <inherited>false</inherited>
         <executions>
           <execution>
             <phase>package</phase>
