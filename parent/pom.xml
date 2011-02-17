@@ -95,6 +95,15 @@ TODO enable when ready (has a build!)
 
   <developers>
     <developer>
+      <id>rlogiacco</id>
+      <name>Roberto Lo Giacco</name>
+      <email>rlogiacco@users.sourceforge.net</email>
+      <roles>
+        <role>Developer</role>
+      </roles>
+      <timezone>0</timezone>
+    </developer>
+    <developer>
       <id>jeffjensen</id>
       <name>Jeff Jensen</name>
       <email>jeffjensen@codehaus.org</email>
@@ -112,7 +121,6 @@ TODO enable when ready (has a build!)
       </roles>
       <timezone>0</timezone>
     </developer>
-<!-- TODO everyone add yourself -->
   </developers>
 
   <mailingLists>
@@ -171,6 +179,23 @@ TODO enable when ready (has a build!)
             <version>${project.version}</version>
           </dependency>
         </dependencies>
+      </plugin>
+      <plugin>
+        <artifactId>maven-assembly-plugin</artifactId>
+        <executions>
+          <execution>
+            <phase>package</phase>
+            <goals>
+              <goal>single</goal>
+            </goals>
+            <configuration>
+              <runOnlyAtExecutionRoot>true</runOnlyAtExecutionRoot>
+              <descriptors>
+                <descriptor>src/main/assembly/rules.xml</descriptor>
+              </descriptors>
+            </configuration>
+          </execution>
+        </executions>
       </plugin>
     </plugins>
 
@@ -235,7 +260,6 @@ TODO enable when ready (has a build!)
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-site-plugin</artifactId>
-          <version>${sitePluginVersion}</version>
           <configuration>
             <reportPlugins>
               <plugin>
@@ -284,8 +308,10 @@ TODO enable when all modules in SCM
                     <artifactId>doclet</artifactId>
                     <version>${umlGraphVersion}</version>
                   </docletArtifact>
-                  <additionalparam>-hide java.* -types -views -collapsible
-                    -postfixpackage -collpackages java.util.* -inferdep
+                  <additionalparam>-hide java.* -types -views
+                    -collapsible
+                    -postfixpackage -collpackages
+                    java.util.* -inferdep
                     -inferrel</additionalparam>
                   <useStandardDocletOptions>true</useStandardDocletOptions>
                 </configuration>
